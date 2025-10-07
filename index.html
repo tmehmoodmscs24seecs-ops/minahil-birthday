@@ -1,247 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Minahil 💕</title>
-<style>
-/* ======= General Styling ======= */
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  font-family:'Georgia',serif;
-  background:linear-gradient(135deg,#ff6b9d 0%,#c94b4b 100%);
-  min-height:100vh; display:flex; justify-content:center; align-items:center;
-  overflow:hidden;
-}
-.container {
-  width:90%; max-width:600px; background:rgba(255,255,255,0.95);
-  border-radius:30px; padding:40px; box-shadow:0 20px 60px rgba(0,0,0,0.3);
-  position:relative; min-height:500px; display:flex; flex-direction:column;
-  align-items:center; justify-content:center;
-}
-.date-title {
-  color:#ff1744; font-size:18px; font-weight:bold;
-  margin-bottom:15px; text-align:center; letter-spacing:1px;
-}
-.content { text-align:center; animation:fadeIn 1s ease-in; width:100%; }
-@keyframes fadeIn {
-  from {opacity:0; transform:translateY(20px);}
-  to {opacity:1; transform:translateY(0);}
-}
-/* ======= Slides ======= */
-.quote-slide {
-  background:linear-gradient(135deg,#ffeef8 0%,#ffe0e9 100%);
-  padding:40px; border-radius:20px; position:relative; overflow-y:auto;
-  max-height:70vh;
-}
-.message {
-  font-size:24px; color:#c94b4b; line-height:1.8; margin:20px 0;
-  font-style:italic; position:relative; z-index:2;
-}
-.long-message {
-  font-size:16px; color:#c94b4b; line-height:1.6; margin:20px 0;
-  font-style:italic; text-align:center; position:relative; z-index:2;
-}
-.image-container {
-  width:100%; max-width:400px; height:400px; margin:20px auto;
-  border-radius:20px; overflow:hidden;
-  box-shadow:0 10px 30px rgba(255,23,68,0.3); position:relative;
-}
-.image-container img { width:100%; height:100%; object-fit:cover; }
-.image-quote {
-  position:absolute; bottom:0; left:0; right:0;
-  background:linear-gradient(to top,rgba(255,23,68,0.95),transparent);
-  color:white; padding:20px; font-size:18px; font-style:italic; text-align:center;
-}
-/* ======= Navigation ======= */
-.navigation { display:flex; gap:30px; margin-top:30px; justify-content:center; }
-.nav-btn {
-  background:linear-gradient(135deg,#ff6b9d 0%,#c94b4b 100%);
-  color:white; border:none; width:60px; height:60px; border-radius:50%;
-  cursor:pointer; font-size:24px; display:flex; align-items:center; justify-content:center;
-  transition:all .3s ease; box-shadow:0 5px 15px rgba(255,23,68,0.4);
-}
-.nav-btn:hover:not(:disabled){ transform:scale(1.1); box-shadow:0 8px 20px rgba(255,23,68,0.6);}
-.nav-btn:disabled{ background:#ccc; cursor:not-allowed; box-shadow:none; }
-/* ======= Floating Decorations ======= */
-.hearts{ position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; overflow:hidden; }
-.heart,.balloon{ position:absolute; font-size:25px; animation:float 6s infinite; opacity:0; }
-@keyframes float {
-  0%{transform:translateY(100vh) rotate(0deg);opacity:1;}
-  100%{transform:translateY(-100vh) rotate(360deg);opacity:0;}
-}
-.balloon{font-size:30px;animation:floatBalloon 8s infinite;}
-@keyframes floatBalloon {
-  0%{transform:translateY(100vh) translateX(0);opacity:1;}
-  50%{transform:translateY(50vh) translateX(20px);opacity:1;}
-  100%{transform:translateY(-100vh) translateX(-20px);opacity:0;}
-}
-.decoration{position:absolute;pointer-events:none;z-index:1;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Minahil 💕</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family:'Georgia', serif;
+      background: linear-gradient(135deg, #ff6b9d 0%, #c94b4b 100%);
+      min-height:100vh; display:flex; justify-content:center; align-items:center;
+      overflow:hidden;
+    }
+    .container {
+      width:90%; max-width:600px; background:rgba(255,255,255,0.95);
+      border-radius:30px; padding:40px; box-shadow:0 20px 60px rgba(0,0,0,0.3);
+      position:relative; min-height:500px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+    }
+    .date-title {
+      color:#ff1744; font-size:18px; font-weight:bold;
+      margin-bottom:15px; text-align:center; letter-spacing:1px;
+    }
+    .content { text-align:center; animation:fadeIn 1s ease-in; width:100%; }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+    .quote-slide {
+      background: linear-gradient(135deg, #ffeef8 0%, #ffe0e9 100%);
+      padding:40px; border-radius:20px; position:relative; overflow-y:auto;
+      max-height:70vh;
+    }
+    .message {
+      font-size:24px; color:#c94b4b; line-height:1.8; margin:20px 0;
+      font-style:italic; position:relative; z-index:2;
+    }
+    .long-message {
+      font-size:16px; color:#c94b4b; line-height:1.6; margin:20px 0;
+      font-style:italic; text-align:center; position:relative; z-index:2;
+    }
+    .image-container {
+      width:100%; max-width:400px; height:400px; margin:20px auto;
+      border-radius:20px; overflow:hidden;
+      box-shadow:0 10px 30px rgba(255,23,68,0.3); position:relative;
+    }
+    .image-container img { width:100%; height:100%; object-fit:cover; }
+    .image-quote {
+      position:absolute; bottom:0; left:0; right:0;
+      background: linear-gradient(to top, rgba(255,23,68,0.95), transparent);
+      color:white; padding:20px; font-size:18px; font-style:italic; text-align:center;
+    }
+    .navigation {
+      display:flex; gap:30px; margin-top:30px; justify-content:center;
+    }
+    .nav-btn {
+      background: linear-gradient(135deg, #ff6b9d 0%, #c94b4b 100%);
+      color:white; border:none; width:60px; height:60px; border-radius:50%;
+      cursor:pointer; font-size:24px; display:flex;
+      align-items:center; justify-content:center;
+      transition:all .3s ease; box-shadow:0 5px 15px rgba(255,23,68,0.4);
+    }
+    .nav-btn:hover:not(:disabled) {
+      transform:scale(1.1); box-shadow:0 8px 20px rgba(255,23,68,0.6);
+    }
+    .nav-btn:disabled { background:#ccc; cursor:not-allowed; box-shadow:none; }
+    .hearts { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; overflow:hidden; }
+    .heart, .balloon { position:absolute; font-size:25px; animation:float 6s infinite; opacity:0; }
+    @keyframes float {
+      0% { transform:translateY(100vh) rotate(0deg); opacity:1; }
+      100% { transform:translateY(-100vh) rotate(360deg); opacity:0; }
+    }
+    .balloon { font-size:30px; animation:floatBalloon 8s infinite; }
+    @keyframes floatBalloon {
+      0% { transform:translateY(100vh) translateX(0); opacity:1; }
+      50% { transform:translateY(50vh) translateX(20px); opacity:1; }
+      100% { transform:translateY(-100vh) translateX(-20px); opacity:0; }
+    }
+    .decoration { position:absolute; pointer-events:none; z-index:1; }
+    .soundPrompt {
+      position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+      background:rgba(255,255,255,0.9); color:#111; padding:10px 16px;
+      border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); display:none;
+      font-size:14px; z-index:999;
+    }
+  </style>
 </head>
 <body>
-<div class="hearts" id="hearts"></div>
-<div class="container">
-  <div class="content" id="content"></div>
-</div>
+  <div class="hearts" id="hearts"></div>
+  <div class="container">
+    <div class="content" id="content"></div>
+  </div>
+  <div id="soundPrompt" class="soundPrompt">🔊 Click anywhere to enable music</div>
 
-<script>
-const messages = [
-  "Happy Birthday, Minahil! 🎉💕",
-  "You are the sunshine that brightens my darkest days.",
-  "Your smile is my favorite view, and your laughter my favorite sound.",
-  "In your eyes, I found my home and in your heart, my love.",
-  "Every love story is beautiful, but ours is my favorite.",
-  "You’re the reason I believe in love and pure happiness.",
-  "Every moment with you is a memory worth keeping forever.",
-  "Your love is the melody that makes my heart sing.",
-  "You are my today and all of my tomorrows.",
-  "The way you love me has changed me in the most beautiful way."
-];
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+  const messages = [
+    "Happy Birthday, Minahil! 🎉💕",
+    "You're the light in my life, brighter than any star.",
+    "Your laughter is my favorite song, your smile my favorite art.",
+    "When I look at you, the world fades—I'm lost in your eyes.",
+    "You are my calm after the storm, my peace after the chaos.",
+    "In your arms, I find home, warmth, and love infinite.",
+    "I want to hold your hand through every moment, big or small.",
+    "Your presence completes me — more than words can say.",
+    "You are the answer my heart has been searching for.",
+    "Loving you is the journey I never want to end."
+  ];
 
-const finalMessage = `The way you love me has changed me in the most beautiful way. You've taught me what it means to truly care for someone beyond measure. My love for you grows stronger with every sunrise and every sunset we share. You are my greatest blessing, my constant source of joy, and the one person I want by my side through every adventure life brings. Thank you for being you, for loving me unconditionally, and for making every single day feel like magic. Here's to celebrating you today and loving you forever. Happy Birthday, my dearest Minahil. 💕`;
+  const finalMessage = `From the first moment I saw you, I felt something deep and true. Your beauty, your kindness, your spirit — all of it draws me to you endlessly. Today, on your special day, I hope you see how loved you are — how treasured and cherished and needed. Happy Birthday, my love. You are my forever. 💖`;
 
-const imageQuotes = [
-  "You are the most beautiful person in my world 💕",
-  "Your beauty takes my breath away every single time",
-  "Looking at you, I see everything I'll ever need",
-  "You light up my life in ways words can't describe",
-  "Your smile is the reason my heart beats faster",
-  "Everything about you is absolutely perfect to me",
-  "You are my definition of beauty and grace",
-  "Being with you feels like a dream come true",
-  "You are the love I've always wished for",
-  "My heart belongs to you, today and always",
-  "Every moment with you is pure magic",
-  "You make my world more beautiful just by existing",
-  "Your presence in my life is my greatest blessing",
-  "I fall more in love with you every single day",
-  "You are everything I've ever dreamed of and more",
-  "Your love completes me in every way possible",
-  "You are my happiness, my peace, my everything",
-  "Loving you is the best decision I ever made",
-  "You are the reason I believe in forever"
-];
+  const imageQuotes = [
+    "Your smile steals my breath away every time 💕",
+    "In your eyes I see my future — bright and endless.",
+    "You’re everything I ever wished for, and more.",
+    "My heart whispers your name with every beat.",
+    "You make ordinary days extraordinary with your love.",
+    "With you, even silence feels like a beautiful song.",
+    "You are my favorite story in my life's pages.",
+    "Your love is the melody that plays in my soul.",
+    "You’re the dream I didn’t know I needed to live.",
+    "Even the stars envy your glow tonight."
+  ];
 
-const images = [
-  'https://i.ibb.co/Dg4MKm8v/IMG-2485.jpg',
-  'https://i.ibb.co/KzS7j5hz/IMG-2481.jpg',
-  'https://i.ibb.co/4ngJ8Ftr/IMG-2435.jpg',
-  'https://i.ibb.co/4ZdKYrKh/Whats-App-Image-2025-10-06-at-19-44-19-876ef881.jpg',
-  'https://i.ibb.co/4wQTjt9V/Whats-App-Image-2025-10-06-at-19-44-18-c101506c.jpg',
-  'https://i.ibb.co/NnTmWfvj/Whats-App-Image-2025-10-06-at-19-44-19-4c94112e.jpg',
-  'https://i.ibb.co/3yVkSym6/Whats-App-Image-2025-10-06-at-19-44-18-bd18e29f.jpg',
-  'https://i.ibb.co/wFZ5tsgL/Whats-App-Image-2025-10-06-at-19-43-08-167375b8.jpg',
-  'https://i.ibb.co/m5hVdV2j/Whats-App-Image-2025-10-06-at-19-43-08-bec8dd14.jpg',
-  'https://i.ibb.co/dwWJZY6L/Whats-App-Image-2025-10-06-at-19-43-07-0b159908.jpg',
-  'https://i.ibb.co/tM9CkGNW/Whats-App-Image-2025-10-06-at-19-43-07-9fa7d041.jpg',
-  'https://i.ibb.co/C5x2V8Bk/Whats-App-Image-2025-10-06-at-19-43-01-7c3a94c7.jpg',
-  'https://i.ibb.co/Hf9vF11b/Whats-App-Image-2025-10-06-at-19-43-00-2e6379d9.jpg',
-  'https://i.ibb.co/21f3N3qQ/Whats-App-Image-2025-10-06-at-19-43-00-52d9f796.jpg',
-  'https://i.ibb.co/ZzWqJgw0/Whats-App-Image-2025-10-06-at-19-42-57-c548527d.jpg',
-  'https://i.ibb.co/yFzyr8rt/Whats-App-Image-2025-10-06-at-19-42-56-c784729b.jpg',
-  'https://i.ibb.co/rRd6gkY9/Whats-App-Image-2025-10-06-at-19-42-56-ea17a998.jpg',
-  'https://i.ibb.co/S4CQ0X81/Whats-App-Image-2025-10-06-at-19-42-55-bbaa488b.jpg',
-  'https://i.ibb.co/0jBPnX8k/Whats-App-Image-2025-10-06-at-19-42-53-9efb4cac.jpg'
-];
+  const images = [
+    'https://i.ibb.co/Dg4MKm8v/IMG-2485.jpg',
+    'https://i.ibb.co/KzS7j5hz/IMG-2481.jpg',
+    'https://i.ibb.co/4ngJ8Ftr/IMG-2435.jpg',
+    'https://i.ibb.co/4ZdKYrKh/Whats-App-Image-2025-10-06-at-19-44-19-876ef881.jpg',
+    'https://i.ibb-co/4wQTjt9V/Whats-App-Image-2025-10-06-at-19-44-18-c101506c.jpg',
+    'https://i.ibb.co/NnTmWfvj/Whats-App-Image-2025-10-06-at-19-44-19-4c94112e.jpg',
+    'https://i.ibb.co/3yVkSym6/Whats-App-Image-2025-10-06-at-19-44-18-bd18e29f.jpg',
+    'https://i.ibb.co/wFZ5tsgL/Whats-App-Image-2025-10-06-at-19-43-08-167375b8.jpg',
+    'https://i.ibb.co/m5hVdV2j/Whats-App-Image-2025-10-06-at-19-43-08-bec8dd14.jpg',
+    'https://i.ibb.co/dwWJZY6L/Whats-App-Image-2025-10-06-at-19-43-07-0b159908.jpg',
+    'https://i.ibb.co/tM9CkGNW/Whats-App-Image-2025-10-06-at-19-43-07-9fa7d041.jpg',
+    'https://i.ibb.co/C5x2V8Bk/Whats-App-Image-2025-10-06-at-19-43-01-7c3a94c7.jpg',
+    'https://i.ibb.co/Hf9vF11b/Whats-App-Image-2025-10-06-at-19-43-00-2e6379d9.jpg',
+    'https://i.ibb.co/21f3N3qQ/Whats-App-Image-2025-10-06-at-19-43-00-52d9f796.jpg',
+    'https://i.ibb.co/ZzWqJgw0/Whats-App-Image-2025-10-06-at-19-42-57-c548527d.jpg',
+    'https://i.ibb.co/yFzyr8rt/Whats-App-Image-2025-10-06-at-19-42-56-c784729b.jpg',
+    'https://i.ibb.co/rRd6gkY9/Whats-App-Image-2025-10-06-at-19-42-56-ea17a998.jpg',
+    'https://i.ibb-co/S4CQ0X81/Whats-App-Image-2025-10-06-at-19-42-55-bbaa488b.jpg',
+    'https://i.ibb.co/0jBPnX8k/Whats-App-Image-2025-10-06-at-19-42-53-9efb4cac.jpg'
+  ];
 
-let currentIndex = 0;
+  let currentIndex = 0;
 
-function createDecoration(){
-  const d=document.createElement('div');
-  const isHeart=Math.random()>0.5;
-  d.className=isHeart?'heart':'balloon';
-  d.innerHTML=isHeart?'❤️':'🎈';
-  d.style.left=Math.random()*100+'%';
-  d.style.animationDelay=Math.random()*4+'s';
-  document.getElementById('hearts').appendChild(d);
-  setTimeout(()=>d.remove(),isHeart?6000:8000);
-}
-setInterval(createDecoration,400);
-
-function createQuoteDecorations(){
-  let dec='';
-  for(let i=0;i<8;i++){
-    const top=Math.random()*80+10;
-    const left=Math.random()*80+10;
-    const emoji=i%2===0?'💕':'🎈';
-    dec+=`<div class="decoration" style="top:${top}%;left:${left}%;font-size:${20+Math.random()*15}px;">${emoji}</div>`;
+  function createDecoration(){
+    const d = document.createElement('div');
+    const isHeart = Math.random() > 0.5;
+    d.className = isHeart ? 'heart' : 'balloon';
+    d.innerHTML = isHeart ? '❤️' : '🎈';
+    d.style.left = Math.random()*100 + '%';
+    d.style.animationDelay = Math.random()*4 + 's';
+    document.getElementById('hearts').appendChild(d);
+    setTimeout(()=> d.remove(), isHeart ? 6000 : 8000);
   }
-  return dec;
-}
+  setInterval(createDecoration, 400);
 
-function showContent(){
-  const content=document.getElementById('content');
-  const dateHTML=`<div class="date-title">08 October 2025</div>`;
-  
-  // Slide 0 = Greeting
-  if(currentIndex===0){
-    content.innerHTML=`
-      ${dateHTML}
-      <div class="quote-slide">
-        ${createQuoteDecorations()}
-        <h1 class="message" style="font-size:36px;">${messages[0]}</h1>
-      </div>
-      <div class="navigation">
-        <button class="nav-btn" disabled>←</button>
-        <button class="nav-btn" onclick="nextSlide()">→</button>
-      </div>`;
-    return;
+  function createQuoteDecorations(){
+    let dec = '';
+    for(let i=0;i<8;i++){
+      const top = Math.random()*80 + 10;
+      const left = Math.random()*80 + 10;
+      const emoji = i%2 === 0 ? '💕' : '🎈';
+      dec += `<div class="decoration" style="top:${top}%;left:${left}%;font-size:${20 + Math.random()*15}px;">${emoji}</div>`;
+    }
+    return dec;
   }
 
-  // Slides 1–38 alternate: image (odd), text (even)
-  if(currentIndex>0 && currentIndex<=38){
-    if(currentIndex%2===1){ // image slide
-      const imgIndex=(currentIndex-1)/2;
-      const q=imageQuotes[imgIndex%imageQuotes.length];
-      content.innerHTML=`
-        ${dateHTML}
-        <div class="image-slide">
-          <div class="image-container">
-            <img src="${images[imgIndex]}" alt="Memory">
-            <div class="image-quote">${q}</div>
-          </div>
-        </div>
-        <div class="navigation">
-          <button class="nav-btn" onclick="prevSlide()">←</button>
-          <button class="nav-btn" onclick="nextSlide()">→</button>
-        </div>`;
-    } else { // quote slide
-      const msgIndex=currentIndex/2;
-      const txt=messages[msgIndex%messages.length];
-      content.innerHTML=`
+  function showContent(){
+    const content = document.getElementById('content');
+    const dateHTML = `<div class="date-title">08 October 2025</div>`;
+
+    if(currentIndex === 0){
+      content.innerHTML = `
         ${dateHTML}
         <div class="quote-slide">
           ${createQuoteDecorations()}
-          <p class="message">${txt}</p>
+          <h1 class="message">${messages[0]}</h1>
+        </div>
+        <div class="navigation">
+          <button class="nav-btn" disabled>←</button>
+          <button class="nav-btn" onclick="nextSlide()">→</button>
+        </div>`;
+      return;
+    }
+
+    if(currentIndex > 0 && currentIndex <= 38){
+      if(currentIndex % 2 === 1){
+        const imgIndex = (currentIndex - 1)/2;
+        const q = imageQuotes[imgIndex % imageQuotes.length];
+        content.innerHTML = `
+          ${dateHTML}
+          <div class="image-slide">
+            <div class="image-container">
+              <img src="${images[imgIndex]}" alt="Memory">
+              <div class="image-quote">${q}</div>
+            </div>
+          </div>
+          <div class="navigation">
+            <button class="nav-btn" onclick="prevSlide()">←</button>
+            <button class="nav-btn" onclick="nextSlide()">→</button>
+          </div>`;
+      } else {
+        const msgIndex = currentIndex / 2;
+        const txt = messages[msgIndex % messages.length];
+        content.innerHTML = `
+          ${dateHTML}
+          <div class="quote-slide">
+            ${createQuoteDecorations()}
+            <p class="message">${txt}</p>
+          </div>
+          <div class="navigation">
+            <button class="nav-btn" onclick="prevSlide()">←</button>
+            <button class="nav-btn" onclick="nextSlide()">→</button>
+          </div>`;
+      }
+      return;
+    }
+
+    if(currentIndex === 39){
+      content.innerHTML = `
+        ${dateHTML}
+        <div class="quote-slide">
+          ${createQuoteDecorations()}
+          <p class="long-message">${finalMessage}</p>
         </div>
         <div class="navigation">
           <button class="nav-btn" onclick="prevSlide()">←</button>
-          <button class="nav-btn" onclick="nextSlide()">→</button>
+          <button class="nav-btn" disabled>→</button>
         </div>`;
     }
-    return;
   }
 
-  // Slide 39 = Final long message
-  if(currentIndex===39){
-    content.innerHTML=`
-      ${dateHTML}
-      <div class="quote-slide">
-        ${createQuoteDecorations()}
-        <p class="long-message">${finalMessage}</p>
-      </div>
-      <div class="navigation">
-        <button class="nav-btn" onclick="prevSlide()">←</button>
-        <button class="nav-btn" disabled>→</button>
-      </div>`;
+  function nextSlide(){
+    if(currentIndex < 39){
+      currentIndex++;
+      showContent();
+      enableMusicOnInteraction();
+    }
   }
-}
+  function prevSlide(){
+    if(currentIndex > 0){
+      currentIndex--;
+      showContent();
+    }
+  }
 
-function nextSlide(){ if(currentIndex<39){currentIndex++; showContent();} }
-function prevSlide(){ if(currentIndex>0){currentIndex--; showContent();} }
+  // YouTube audio embed hidden + autoplay + unmute logic
+  let ytPlayer;
+  let musicEnabled = false;
+  function onYouTubeIframeAPIReady(){
+    // create hidden player
+    const div = document.createElement('div');
+    div.id = 'ytplayer';
+    div.style.position = 'fixed';
+    div.style.left = '-9999px';
+    div.style.width = '1px';
+    div.style.height = '1px';
+    document.body.appendChild(div);
 
-showContent();
-</script>
+    ytPlayer = new YT.Player('ytplayer', {
+      height:'1',width:'1',
+      videoId:'a6cJAFFQn_I',
+      playerVars:{
+        autoplay:1,
+        controls:0,
+        loop:1,
+        playlist:'a6cJAFFQn_I',
+        modestbranding:1,
+        rel:0,
+        playsinline:1,
+        mute:1
+      },
+      events:{
+        onReady: (e) => {
+          e.target.mute();
+          e.target.playVideo();
+        }
+      }
+    });
+  }
+  function enableMusicOnInteraction(){
+    if(!ytPlayer || musicEnabled) return;
+    try {
+      ytPlayer.unMute();
+      ytPlayer.setVolume(22);
+      musicEnabled = true;
+    } catch(e){
+      // show prompt if cannot unmute
+      document.getElementById('soundPrompt').style.display = 'block';
+      document.addEventListener('click', function tryAgain(){
+        enableMusicOnInteraction();
+        document.getElementById('soundPrompt').style.display = 'none';
+        document.removeEventListener('click', tryAgain);
+      });
+    }
+  }
+
+  showContent();
+  </script>
 </body>
 </html>
